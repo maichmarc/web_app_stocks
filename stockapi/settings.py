@@ -33,10 +33,10 @@ SECRET_KEY = "django-insecure-^4up(1)ljfa3@e2733%&p^7z#+zby+&c%^3&1cm=u8qc78ftp6
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['serene-bravery-production.up.railway.app']
+ALLOWED_HOSTS = ['empowering-radiance-production-ddf2.up.railway.app']
 
 CSRF_TRUSTED_ORIGINS = [
-    'https://serene-bravery-production.up.railway.app',
+    'https://empowering-radiance-production-ddf2.up.railway.app',
 ]
 
 
