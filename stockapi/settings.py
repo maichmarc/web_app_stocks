@@ -97,8 +97,8 @@ DATABASES = {
         'CONN_MAX_AGE': 30,
         'OPTIONS': {
         'sslmode': 'require'        
+        }
     }
-}
 }
 
 # DATABASES = {

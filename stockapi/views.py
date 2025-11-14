@@ -22,10 +22,10 @@ import os
 
 db_settings = settings.DATABASES['default']
 dialect = "postgresql+psycopg2"
-# DATABASE_URL = (
-#         f"{dialect}://{db_settings['USER']}:{db_settings['PASSWORD']}"
-#         f"@{db_settings['HOST']}:{db_settings['PORT']}/{db_settings['NAME']}"
-#     )
+DATABASE_URL = (
+        f"{dialect}://{db_settings['USER']}:{db_settings['PASSWORD']}"
+        f"@{db_settings['HOST']}:{db_settings['PORT']}/{db_settings['NAME']}"
+    )
 
 DATABASE_URL = os.environ.get('DATABASE_URL')
 engine = create_engine(DATABASE_URL)
