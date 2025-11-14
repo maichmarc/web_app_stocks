@@ -1,0 +1,67 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary justify-content-center">
+
+    <a class="navbar-brand main-heading" href="{% url 'home'  %}"> 
+        <!-- <img src="images\images.png" width="30" height="24"> -->
+            
+      &nbsp; Home &nbsp; <i class="fa fa-home" aria-hidden="true"></i> </a>
+    
+    </a>
+  
+  
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+  
+    </button>
+  
+  
+      <div class="collapse navbar-collapse text-center" id="navbarNavDropdown">
+  
+        
+        <ul class="navbar-nav mr-auto">
+  
+  
+          &nbsp;     &nbsp;     &nbsp; 
+  
+          
+  
+            <li class="nav-item">
+        
+              <a class="nav-link" href="{% url 'stockprices'  %}">Daily Prices &nbsp; <i class="fa fa-table" aria-hidden="true"></i> </a>
+  
+            </li>
+  
+  
+            &nbsp;     &nbsp;     &nbsp; 
+  
+  
+            <li class="nav-item">
+  
+              <a class="nav-link" href="{% url 'stockindex' %}">Dashboard &nbsp; <i class="fa fa-line-chart" aria-hidden="true"></i> </a>
+  
+            </li>
+
+             <li class="nav-item">
+  
+              <a class="nav-link" href="{% url 'stock_api' %}">API &nbsp; <i class="fa fa-plug" aria-hidden="true"></i> </a>
+  
+            </li>
+  
+  
+  
+        </ul>
+  
+      
+      
+        
+      </div>
+  
+  
+  </nav>
