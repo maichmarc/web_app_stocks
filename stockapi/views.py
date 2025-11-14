@@ -25,11 +25,11 @@ dialect = "postgresql+psycopg2"
 
 
 DATABASE_URL = (
-        f"{dialect}://{os.environ.get['PGUSER']}:{os.environ.get['PGPASSWORD']}"
-        f"@{os.environ.get['PGHOST']}:{os.environ.get['PGPORT']}/{os.environ.get['PGDATABASE']}"
+        f"{dialect}://{os.environ['PGUSER']}:{os.environ['PGPASSWORD']}"
+        f"@{os.environ['PGHOST']}:{os.environ['PGPORT']}/{os.environ['PGDATABASE']}"
     )
 
-DATABASE_URL = os.environ.get('DATABASE_URL')
+# DATABASE_URL = os.environ.get('DATABASE_URL')
 engine = create_engine(DATABASE_URL)
 
 query = """SELECT c.name, c.code, d.date, d.day_low, d.day_high, d.day_price, d.volume  
