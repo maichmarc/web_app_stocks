@@ -22,9 +22,10 @@ import os
 
 db_settings = settings.DATABASES['default']
 dialect = "postgresql+psycopg2"
+
 DATABASE_URL = (
-        f"{dialect}://{db_settings['USER']}:{db_settings['PASSWORD']}"
-        f"@{db_settings['HOST']}:{db_settings['PORT']}/{db_settings['NAME']}"
+        f"{dialect}://{db_settings['PGUSER']}:{db_settings['PGPASSWORD']}"
+        f"@{db_settings['PGHOST']}:{db_settings['PGPORT']}/{db_settings['PGDATABASE']}"
     )
 
 DATABASE_URL = os.environ.get('DATABASE_URL')
